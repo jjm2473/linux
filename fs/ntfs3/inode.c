@@ -45,7 +45,6 @@ static struct inode *ntfs_read_mft(struct inode *inode,
 	struct MFT_REC *rec;
 	struct runs_tree *run;
 
-	inode->i_op = NULL;
 	/* Setup 'uid' and 'gid' */
 	inode->i_uid = sbi->options->fs_uid;
 	inode->i_gid = sbi->options->fs_gid;
